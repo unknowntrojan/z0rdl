@@ -97,8 +97,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                     if *needs_dl && let Err(_) = download_id(z0r_id).await {
                         println!("Unable to download #{z0r_id}!");
                     } else if *needs_dl {
-						println!("Successfully downloaded #{z0r_id}!");
-					}
+                        println!("Successfully downloaded #{z0r_id}!");
+                    }
                 }
             })
         })
